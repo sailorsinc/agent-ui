@@ -1,0 +1,63 @@
+{
+  "name": "@avatarfirst/agent-ui",
+  "version": "1.0.0",
+  "description": "Interactive UI components for AI agents — forms, cards, charts, tables, calendars, and more. Works with Claude, ChatGPT, Vercel AI SDK, LangChain, and any agent framework.",
+  "keywords": [
+    "ai", "agent", "ui", "components", "mcp", "mcp-apps",
+    "overlay", "form", "card-list", "chart", "table", "calendar",
+    "claude", "chatgpt", "openai", "agent-sdk", "interactive-ui",
+    "vercel-ai", "langchain", "agent-ui", "agent-toolkit",
+    "model-context-protocol", "conversational-ui", "rich-ui",
+    "agent-components", "ai-ui", "tool-ui"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sailorsinc/agent-ui"
+  },
+  "homepage": "https://agent-ui.dev",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./mcp": {
+      "types": "./dist/mcp/index.d.ts",
+      "import": "./dist/mcp/index.js"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.js"
+    }
+  },
+  "bin": {
+    "agent-ui": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  }
+}

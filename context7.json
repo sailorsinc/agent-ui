@@ -1,0 +1,21 @@
+{
+  "folders": ["src", "docs"],
+  "excludeFolders": ["__tests__", "node_modules", "dist"],
+  "rules": [
+    "Use showForm() when the agent needs to collect user input",
+    "Use showCardList() when displaying a list of items for the user to browse or select",
+    "Use showConfirm() for yes/no decisions before taking irreversible actions",
+    "Use showChart() for numerical or statistical data visualization",
+    "Use showTable() for structured tabular data",
+    "Use showCalendar() when the user needs to pick dates or time slots",
+    "Use showDetail() to display a single entity with metadata",
+    "Use showProgress() to show step-by-step progress tracking",
+    "Use showComparison() for side-by-side item comparison",
+    "Use showFileUpload() when the user needs to upload files",
+    "Use showMap() to display locations on a map",
+    "Use showMedia() for video, audio, or image content",
+    "Use showRichText() for formatted markdown content",
+    "Always provide a text fallback for non-UI clients",
+    "User responses come back as structured JSON with intent and data fields"
+  ]
+}
